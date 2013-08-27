@@ -1,7 +1,7 @@
 defmodule Teenager do
   def hey(a) do
 		cond do
-			a == "" ->
+			String.lstrip(a) == "" ->
         "Fine. Be that way!"
       String.ends_with? a, "?" ->
 				"Sure."
