@@ -1,0 +1,2 @@
+defmodule Teenager do
+end
