@@ -6,6 +6,15 @@ defmodule Words do
   """
   @spec count(String.t) :: map() 
   def count(sentence) do
-    Enum.reduce(String.split(sentence), Map.new, fn(word, map) -> Map.put(map, word, 1) end)
+    Enum.reduce(split(sentence),
+      Map.new,
+      fn (word, map) -> add(word, map) end)
+  end
+  defp split(sentence) do
+    String.split(sentence)
+  end
+  defp add(word, map) do
+    Map.put(map, word, 1)
   end
 end
+
