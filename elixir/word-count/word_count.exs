@@ -1,4 +1,12 @@
 defmodule Words do
+  defp split(sentence) do
+    String.downcase(sentence)
+    |> String.replace(~r/[^a-z\ 0-9]/, "")
+    |> String.split()
+  end
+  defp add(word, map) do
+    Map.put(map, word, 1)
+  end
   @doc """
   Count the number of words in the sentence.
 
@@ -9,12 +17,6 @@ defmodule Words do
     Enum.reduce(split(sentence),
       Map.new,
       fn (word, map) -> add(word, map) end)
-  end
-  defp split(sentence) do
-    String.split(sentence)
-  end
-  defp add(word, map) do
-    Map.put(map, word, 1)
   end
 end
 
