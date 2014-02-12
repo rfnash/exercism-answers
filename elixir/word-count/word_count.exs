@@ -4,8 +4,14 @@ defmodule Words do
     |> String.replace(~r/[^a-z\ 0-9]/, "")
     |> String.split()
   end
+  defp word_count(word, map) do
+    case Map.fetch(map, word) do
+      :error -> 1
+      {:ok, n} -> n+1
+    end
+  end
   defp add(word, map) do
-    Map.put(map, word, 1)
+    Map.put(map, word, word_count(word, map))
   end
   @doc """
   Count the number of words in the sentence.
