@@ -20,9 +20,9 @@ defmodule Words do
   """
   @spec count(String.t) :: map() 
   def count(sentence) do
-    Enum.reduce(split(sentence),
-      Map.new,
-      fn (word, map) -> add(word, map) end)
+    split_sentence = split(sentence)
+    accum = fn (word, map) -> add(word, map) end
+    Enum.reduce(split_sentence, Map.new, accum)
   end
 end
 
