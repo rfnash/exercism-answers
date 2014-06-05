@@ -1,7 +1,7 @@
 defmodule Words do
   defp split(sentence) do
     String.downcase(sentence)
-    |> String.replace(~r/[^a-z\ 0-9]/, "")
+    |> String.replace(~r/[^a-z\ 0-9\-]/, "")
     |> String.split()
   end
   defp word_count(word, map) do
