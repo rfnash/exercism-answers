@@ -2,7 +2,7 @@ defmodule Words do
   defp split(sentence) do
     String.downcase(sentence)
     |> String.replace(~r/[^a-z\ 0-9\-\_]/, "")
-    |> String.split()
+    |> String.split([" ", "_"], trim: true)
   end
   defp word_count(word, map) do
     case Map.fetch(map, word) do
