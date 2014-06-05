@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bob
 
 Bob is a lackadaisical teenager. In conversation, his responses are very limited.
@@ -17,9 +18,27 @@ Run the test file, and fix each of the errors in turn. When you get the first te
 Remember that passing code is just the first step. The goal is to work towards a solution that is as readable and expressive as you can make it.
 
 Have fun!
+=======
+# Word Count
+
+Write a program that given a phrase can count the occurrences of each word in that phrase.
+
+For example for the input `"olly olly in come free"`
+
+```plain
+olly: 2
+in: 1
+come: 1
+free: 1
+```
+>>>>>>> a528747... initial commit
 
 
 
 ## Source
 
+<<<<<<< HEAD
 Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [view source](http://pine.fm/LearnToProgram/?Chapter=06)
+=======
+The golang tour [view source](http://tour.golang.org)
+>>>>>>> a528747... initial commit
