@@ -1,7 +1,0 @@
-"Rule: ocaml dependencies ml (%=test )": "7\218\136\138P9%\023V\030\019v\216F\203H"
-"Rule: ocaml: mli -> cmi (%=bob )": "\194}\222\224c\014a\209\161:k\161\191\210t\194"
-"Resource: /home/rfnash/git/exercism/ocaml/bob/test.ml": "\247v\132\204Y\141\215\196\017h\183#\164#\138\133"
-"Rule: ocaml: ml & cmi -> cmx & o (%=test )": "\166vd\179<\140J\214\240\244\017/\138\151\233\223"
-"Rule: ocaml dependencies mli (%=bob )": "dT\024/S\174!eMu:G\215\231\004\198"
-"Resource: /home/rfnash/git/exercism/ocaml/bob/bob.mli": "\186\184\145G4\017\021v\153\172A#\203\176\003\025"
-"Rule: ocaml: ml -> cmo & cmi (%=test )": "\227\014\135\211\196\131T\223\245\1623\223[U\237\221"

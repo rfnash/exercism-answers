@@ -1,4 +1,4 @@
-# Hamming
+# Point Mutations
 
 Write a program that can calculate the Hamming difference between two DNA strands.
 
@@ -18,10 +18,7 @@ taken from different genomes with a common ancestor, we get a measure of
 the minimum number of point mutations that could have occurred on the
 evolutionary path between the two strands.
 
-This is called the 'Hamming distance'.
-
-It is found by comparing two DNA strands and counting how many of the
-nucleotides are different from their equivalent in the other string.
+This is called the 'Hamming distance'
 
     GAGCCTACTAACGGGAT
     CATCGTAATGACGGCCT
@@ -31,14 +28,10 @@ The Hamming distance between these two DNA strands is 7.
 
 # Implementation notes
 
-The Hamming distance is only defined for sequences of equal length. This means
-that based on the definition, each language could deal with getting sequences
-of equal length differently.
+The Hamming distance is only defined for sequences of equal length. Hence you
+may assume that only sequences of equal length will be passed to your hamming
+distance function.
 
-You will need the Minitest gem. To install it, open a
-terminal window and run:
-
-    gem install minitest
 
 ## Source
 

@@ -35,10 +35,6 @@ The Hamming distance is only defined for sequences of equal length. This means
 that based on the definition, each language could deal with getting sequences
 of equal length differently.
 
-You will need the Minitest gem. To install it, open a
-terminal window and run:
-
-    gem install minitest
 
 ## Source
 
